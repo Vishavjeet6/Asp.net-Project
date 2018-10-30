@@ -1,0 +1,97 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Finess Freak</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 451px;
+            height: 165px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form2" runat="server">
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li class="active"><a href="Homepage.aspx" title="">Homepage</a></li>
+			<li><a href="Homepage.aspx" title="">About Us</a></li>
+			<li><a href="Trainers.aspx" title="">Trainers</a></li>
+			<li><a href="Contact.aspx" title="">Contact Us</a></li>
+			<li><a href="Services.aspx" title="">Services</a></li>
+		</ul>
+	</div>
+</div>
+<div id="wrapper">
+	<div id="content">
+		<div id="sidebar">
+			<div id="support">
+				<h2>Customer Support</h2>
+				<h3>1-800-1234567</h3>
+			</div>
+			<div id="login" class="boxed">
+				<h2 class="title">Client Account</h2>
+				<div class="content">
+						<fieldset>
+						<legend>Sign-In</legend>
+						<label for="inputtext1">Client ID:</label>
+						    <br />
+                            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                            <br />
+&nbsp;<label for="inputtext2">Password:</label>
+						    <asp:TextBox ID="TextBox2" runat="server" OnTextChanged="TextBox2_TextChanged" TextMode="Password"></asp:TextBox>
+                            <br />
+                            <asp:Button ID="Button1" runat="server" Text="Sign In" OnClick="Button1_Click" />
+&nbsp;<br />
+						<p><a href="#">Forgot your password?</a></p>
+						</fieldset>
+                        <asp:Label ID="Label1" runat="server" Text="Label" Visible="False"></asp:Label>
+					</div>
+			</div>
+			<div id="updates" class="boxed">
+				<h2 class="title">Recent Updates</h2>
+				<div class="content">
+                <li>
+							
+							<p><a href="#">HEALTH IS WEALTH&#8230;</a></p>
+						</li>
+						<li>
+							
+							<p><a href="#">STAY HEALTHY&#8230;</a></p>
+						</li>
+						<li>
+							
+							<p><a href="#">BE FIT&#8230;</a></p>
+						</li>
+						<li>
+							
+							<p><a href="#">ITS NOW OR NEVER&#8230;</a></p>
+						</li>
+				</div>
+			</div>
+		</div>
+		<div id="main" class="auto-style1">
+			<div id="welcome" class="post">
+				<h2 class="title">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+			</div>
+		</div>
+	</div>
+</div>
+    </form>
+</body>
+</html>
+
